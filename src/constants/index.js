@@ -3,26 +3,34 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  research,
+  education,
+  collaboration,
+  business,
+  nitroFinance,
+  planar,
+  rageTrade,
+  smileFinance,
+  vela,
+  yamaFinance,
+  beraChain,
+  gammaSwap,
+  poolShark,
+  tradable,
+  aave,
+  opensea,
+  uniswap,
+  not,
+  entorg,
+  viper,
+  gray,
+  blue,
+  silver,
+  red,
+  yellow,
 } from "../assets";
 
 export const navLinks = [
@@ -32,7 +40,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "What We do",
   },
   {
     id: "contact",
@@ -42,129 +50,133 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "PLATNIUM",
+    icon: gray,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "SAPPHIRE ",
+    icon: blue,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "SILVER",
+    icon: silver,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "RUBY",
+    icon: red,
+  },
+  {
+    title: "GOLD",
+    icon: yellow,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Rage Trade ",
+    icon: rageTrade,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "nitroFinance ",
+    icon: nitroFinance,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "planar",
+    icon: planar,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "smileFinance",
+    icon: smileFinance,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "yamaFinance",
+    icon: yamaFinance,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "vela",
+    icon: vela,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "beraChain",
+    icon: beraChain,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "gammaSwap ",
+    icon: gammaSwap,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "poolShark",
+    icon: poolShark,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "tradable ",
+    icon: tradable,
   },
   {
-    name: "git",
-    icon: git,
+    name: "aave",
+    icon: aave,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "opensea",
+    icon: opensea,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "uniswap",
+    icon: uniswap,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Research",
+    company_name: "",
+    icon: research,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Lead Researcher | Leo Wolfie",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Conducting in-depth analysis of new and existing blockchain projects, including their technology, use cases, and potential risks and opportunities.",
+      "Publishing research reports, whitepapers, and other educational materials to share insights with the wider blockchain community.",
+      "Collaborating with academic institutions and industry partners to advance blockchain research and development.",
+      "Supporting community-driven research initiatives through grants, funding, and other resources.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Education",
+    company_name: "",
+    icon: education,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Lead Educator | ShinraXBT ",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and delivering training programs, workshops, and webinars to educate individuals and organizations on blockchain technology and its applications.",
+      "Offering mentorship and guidance to help new and aspiring blockchain entrepreneurs navigate the industry and build successful ventures.",
+      "Creating and curating educational content, such as articles, videos, and podcasts, to help individuals stay up-to-date on the latest trends and developments in the blockchain space.",
+      "Building and fostering communities of blockchain enthusiasts and practitioners through events, meetups, and online forums.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Collaboration",
+    company_name: "",
+    icon: collaboration,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Lead Collaborator | WAW",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Partnering with blockchain projects and startups to provide funding, technical support, and other resources to help them grow and succeed.",
+      "Facilitating collaborations between blockchain projects and other industries, such as finance, healthcare, and logistics, to explore new use cases and opportunities.",
+      "Building networks of strategic partners, investors, and advisors to help blockchain projects connect with the right people and resources.",
+      "Promoting open collaboration and knowledge-sharing within the blockchain community to advance the industry as a whole.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: " Business Development",
+    company_name: "",
+    icon: business,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Lead BD | Viperr",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Identifies potential business opportunities and partnerships for AlphaDAO.",
+      "Evaluates the feasibility and potential risks of partnerships and collaborations.",
+      "Develops and negotiate agreements and contracts with partner protocol.",
+      "Monitors and evaluates the success of partnerships and adjusts strategies as necessary.",
     ],
   },
 ];
@@ -172,94 +184,28 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Dont't fade @AlfaDAO_ a lot of BD Gods hanging around looking for where to perch @LeoWolfie_ is the latest discovery making its 313 BDs of 502 members.",
+    name: "triplenotTech",
+    designation: "Co-founder",
+    company: "Nitro Finance",
+    image: not,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "The Alfalfa in @AlfaDAO_ is pouring in so much that we now need bots to summarize it.",
+    name: "entorg1",
+    designation: "pearl club member",
+    company: " tapioca_dao",
+    image: entorg,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Life is easy when you have a DAO that always acts in your best interests, you really dont't understand how much of a family we truly are ",
+    name: "CryptoSources",
+    designation: "Founder",
+    company: "AlfaDAO_",
+    image: viper,
   },
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials };
