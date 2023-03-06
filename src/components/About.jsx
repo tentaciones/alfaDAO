@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[200px] w-full">
@@ -63,7 +64,9 @@ const About = () => {
 
       <div className="mt-20 flex flex-wrap gap-5">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <Link to="https://opensea.io/collection/alfadao-access">
+            <ServiceCard key={service.title} index={index} {...service} />
+          </Link>
         ))}
       </div>
     </>

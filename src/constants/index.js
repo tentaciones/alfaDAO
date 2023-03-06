@@ -31,6 +31,8 @@ import {
   silver,
   red,
   yellow,
+  discord,
+  twitter,
 } from "../assets";
 
 export const navLinks = [
@@ -68,6 +70,24 @@ const services = [
   {
     title: "GOLD",
     icon: yellow,
+  },
+];
+
+const communities = [
+  {
+    name: "Discord",
+    icon: discord,
+    link: "https://discord.gg/alfadao",
+  },
+  {
+    name: "Twitter",
+    icon: twitter,
+    link: "https://twitter.com/AlfaDAO_",
+  },
+  {
+    name: "OpenSea",
+    icon: opensea,
+    link: "https://opensea.io/collection/alfadao-access",
   },
 ];
 
@@ -208,4 +228,4 @@ const testimonials = [
   },
 ];
 
-export { services, technologies, experiences, testimonials };
+export { services, technologies, experiences, testimonials, communities };

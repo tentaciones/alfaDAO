@@ -10,9 +10,10 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+    Name: "",
+    Twitter: "",
+    Discord: "",
+    Message: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -27,6 +28,36 @@ const Contact = () => {
     });
   };
 
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    fetch(
+      "https://script.google.com/macros/s/AKfycbyY1st1avH1f_qafAW9IxGjkA-l-sm37rN0Vw532UXbFVrMD7q-Y82X5E3qixWF7NU/exec",
+      {
+        method: "POST",
+        body: form,
+      }
+    ).then(
+      () => {
+        setLoading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
+
+        setForm({
+          Name: "",
+          Twitter: "",
+          Discord: "",
+          Message: "",
+        });
+      },
+      (error) => {
+        setLoading(false);
+        console.error(error);
+
+        alert("Ahh, something went wrong. Please try again.");
+      }
+    );
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -37,9 +68,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "chideracharles65",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "chideracharles654@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -50,9 +81,10 @@ const Contact = () => {
           alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
-            name: "",
-            email: "",
-            message: "",
+            Name: "",
+            Twitter: "",
+            Discord: "",
+            Message: "",
           });
         },
         (error) => {
@@ -77,15 +109,15 @@ const Contact = () => {
 
         <form
           ref={formRef}
-          onSubmit={handleSubmit}
+          onSubmit={submitHandler}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Project Name</span>
             <input
               type="text"
-              name="name"
-              value={form.name}
+              name="Name"
+              value={form.Name}
               onChange={handleChange}
               placeholder="What's your project's name ?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -96,9 +128,9 @@ const Contact = () => {
               Project Twitter Link
             </span>
             <input
-              type="email"
-              name="email"
-              value={form.email}
+              type="text"
+              name="Twitter"
+              value={form.Twitter}
               onChange={handleChange}
               placeholder="Twitter Link ?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -109,9 +141,9 @@ const Contact = () => {
               Project Discord Link
             </span>
             <input
-              type="email"
-              name="email"
-              value={form.email}
+              type="text"
+              name="Discord"
+              value={form.Discord}
               onChange={handleChange}
               placeholder="Discord Link?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -123,8 +155,8 @@ const Contact = () => {
             </span>
             <textarea
               rows={7}
-              name="message"
-              value={form.message}
+              name="Message"
+              value={form.Message}
               onChange={handleChange}
               placeholder="Project OverView?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
