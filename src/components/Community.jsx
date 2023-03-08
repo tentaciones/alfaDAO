@@ -1,15 +1,16 @@
 import React from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-
+import { motion } from "framer-motion";
 import { communities } from "../constants";
+import { textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 const Community = () => {
   return (
     <div>
-      <h2 className={`${styles.sectionHeadText} text-center`}>
-        Join Community
-      </h2>
+      <a href="#about">
+        <h2 className={`${styles.sectionHeadText} text-center`}>Community</h2>
+      </a>
       <div className="flex flex-row flex-wrap justify-center gap-2 -mt-20">
         {communities.map((Community) => (
           <>
@@ -38,4 +39,4 @@ const Community = () => {
   );
 };
 
-export default SectionWrapper(Community, "");
+export default SectionWrapper(Community, "community");

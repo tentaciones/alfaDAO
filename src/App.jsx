@@ -23,8 +23,9 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <Community />
+
         <Feedbacks />
+        <Community />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
