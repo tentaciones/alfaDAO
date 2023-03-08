@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[200px] w-full">
@@ -47,7 +48,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        AlfaDAO is an exclusive community consisting of power DeFi and FT users
+        AlfaDAO is an exclusive community consisting of power DeFi and NFT users
         who are actively involved with researching and hunting alfa. By joining
         AlfaDAO, you will be granted access to our community, custom alfa
         scraping tools, DA meetings, AMAs, and far more valuable content.
@@ -63,7 +64,9 @@ const About = () => {
 
       <div className="mt-20 flex flex-wrap gap-5">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <Link to="https://opensea.io/collection/alfadao-access">
+            <ServiceCard key={service.title} index={index} {...service} />
+          </Link>
         ))}
       </div>
     </>

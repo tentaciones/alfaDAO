@@ -38,6 +38,9 @@ import blue from "./card/blue.png";
 import red from "./card/red.png";
 import silver from "./card/silver.png";
 import yellow from "./card/yellow.png";
+import discord from "./discord.jpeg";
+import twitter from "./twitter.jpeg";
+
 export {
   logo,
   backend,
@@ -75,4 +78,6 @@ export {
   silver,
   red,
   yellow,
+  discord,
+  twitter,
 };
