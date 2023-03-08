@@ -9,7 +9,7 @@ const Community = () => {
   return (
     <div>
       <a href="#about">
-        <h2 className={`${styles.sectionHeadText} text-center`}>Community</h2>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Join Community</h2>
       </a>
       <div className="flex flex-row flex-wrap justify-center gap-2 -mt-20">
         {communities.map((Community) => (
