@@ -42,20 +42,23 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "What We do",
+    title: "What We do", 
   },
+    {
+    id: "watchList",
+    title: "WatchList",
+  },
+
   {
+    id: "community",
+    title: "Community",
+  },
+  
+    {
     id: "contact",
     title: "Contact",
   },
-  {
-    id: "community",
-    title: "community",
-  },
-  {
-    id: "watchList",
-    title: "watchList",
-  },
+
 ];
 
 const services = [
