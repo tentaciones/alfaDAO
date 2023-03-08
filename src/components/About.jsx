@@ -69,6 +69,9 @@ const About = () => {
           </Link>
         ))}
       </div>
+      <div className="flex justify-center text-3xl mt-10 font-bold text-white">
+        <p className="text-[#915EFF]">All Colours Grant Equal Access</p>
+      </div>
     </>
   );
 };
