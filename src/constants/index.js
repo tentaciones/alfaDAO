@@ -45,16 +45,17 @@ export const navLinks = [
     title: "What We do",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "watchList",
+    title: "WatchList",
   },
+
   {
     id: "community",
-    title: "community",
+    title: "Community",
   },
   {
-    id: "watchList",
-    title: "watchList",
+    id: "contact",
+    title: "Contact",
   },
 ];
 
