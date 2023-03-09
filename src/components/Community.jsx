@@ -7,21 +7,21 @@ import { textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 const Community = () => {
   return (
-    <div>
-      <a href="#about">
-        <h2 className={`text-5xl font-bold text-center`}>Join Our Community</h2>
-      </a>
-      <div className="flex flex-row flex-wrap justify-center gap-2 -mt-20">
+    <div className=" h-[200px]   md:h-[400px]  md:fixed mt-[60px] md:mt-0 ">
+      <div className="flex flex-col justify-center  ">
         {communities.map((Community) => (
           <>
             <Link to={Community.link}>
-              <div className="w-28 h-28" key={Community.name}></div>
+              <div
+                className="md:w-[60px] md:h-[60px] h-7 w-7"
+                key={Community.name}
+              ></div>
 
-              <div class="w-[60px] h-[60px] mx-auto">
+              <div class="md:w-[60px] md:h-[60px] h-7 w-7 mx-auto">
                 <div class="relative group">
                   <div class="absolute  -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                   <a className="w-full" href={Community.link}>
-                    <div class="relative w-[60px] h-[60px]   bg-black  ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+                    <div class="relative md:w-[60px] md:h-[60px] h-7 w-7   bg-black  ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 ">
                       <img
                         src={Community.icon}
                         alt=""

@@ -18,14 +18,18 @@ const App = () => {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
+          <div className="flex w-screen space-x-0">
+            <Community />
+
+            <Hero />
+          </div>
         </div>
         <About />
         <Experience />
         <Tech />
 
         <Feedbacks />
-        <Community />
+
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

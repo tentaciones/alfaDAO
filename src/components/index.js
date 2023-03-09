@@ -14,6 +14,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Community from "./Community";
+
 export {
   Hero,
   Navbar,

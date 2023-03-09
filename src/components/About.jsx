@@ -62,14 +62,14 @@ const About = () => {
         </p>
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-5">
+      <div className="mt-20 flex justify-center flex-wrap gap-5">
         {services.map((service, index) => (
           <Link to="https://opensea.io/collection/alfadao-access">
             <ServiceCard key={service.title} index={index} {...service} />
           </Link>
         ))}
       </div>
-      <div className="flex justify-center text-3xl mt-10 font-bold text-white">
+      <div className="flex justify-center text-xl md:text-3xl mt-10 font-bold text-white">
         <p className="text-[#915EFF]">All Colours Grant Equal Access</p>
       </div>
     </>
