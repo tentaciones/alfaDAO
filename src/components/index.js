@@ -14,7 +14,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Community from "./Community";
-
+import Earth from "./Earth";
 export {
   Hero,
   Navbar,
@@ -29,4 +29,5 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Earth,
 };
