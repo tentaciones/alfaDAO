@@ -4,7 +4,7 @@ import { EarthCanvas } from "./canvas";
 
 const Earth = () => {
   return (
-    <div className=" md:h-[1000px] w-full h-[500px]">
+    <div className=" md:h-[1000px] w-full h-[500px] -mt-[100px]">
       <EarthCanvas />
     </div>
   );
