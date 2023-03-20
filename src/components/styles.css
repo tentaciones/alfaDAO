@@ -1,0 +1,23 @@
+.collaborate {
+  width: 157px;
+  height: 49px;
+}
+
+.collaborate:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+
+  border-image: linear-gradient(
+      90.21deg,
+      rgba(85, 255, 245, 0.7) -16.89%,
+      #915eff 72.48%
+    )
+    0.5;
+  background: linear-gradient(
+    90.21deg,
+    rgba(85, 255, 245, 0.14) -16.89%,
+    rgba(87, 100, 255, 0.2) 72.48%,
+    rgba(162, 169, 255, 0.14) 72.48%
+  );
+}
